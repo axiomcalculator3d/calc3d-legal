@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Calc 3D</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #4f46e5;
+    --primary-soft: #eef2ff;
+    --border: #e5e7eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --primary: #818cf8;
+      --primary-soft: #1e1b4b;
+      --border: #334155;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+    color: var(--text);
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 36px;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 6px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-top: 24px;
+    color: var(--text);
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .summary {
+    background: var(--primary-soft);
+    border-left: 4px solid var(--primary);
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin: 20px 0;
+  }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  code {
+    background: var(--primary-soft);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade — Calc 3D</h1>
+<p class="updated">Última atualização: 18 de maio de 2026</p>
+
+<div class="summary">
+  <strong>Resumo:</strong> O Calc 3D é um aplicativo de cálculo de custos para
+  impressão 3D. Coletamos o mínimo possível de dados pessoais, não usamos
+  rastreadores, não exibimos anúncios e não compartilhamos suas informações com
+  terceiros. Todos os seus dados ficam armazenados localmente no seu dispositivo
+  ou, se você optar, no seu próprio Google Drive.
+</div>
+
+<h2>1. Quem somos</h2>
+<p>
+  O Calc 3D ("aplicativo", "nós", "nosso") é desenvolvido por
+  <strong>Axiom 3D Studio</strong>.
+</p>
+<p>Para questões relacionadas a esta política ou aos seus dados, entre em contato:</p>
+<ul>
+  <li>E-mail: <a href="mailto:axiomcalculator3d@gmail.com">axiomcalculator3d@gmail.com</a></li>
+  <li>Instagram: <a href="https://instagram.com/axiom_3d_studio">@axiom_3d_studio</a></li>
+</ul>
+
+<h2>2. Dados que coletamos</h2>
+
+<h3>2.1 Dados que você fornece diretamente ao app</h3>
+<p>
+  Quando você usa o Calc 3D, você insere informações sobre o seu negócio de
+  impressão 3D, como:
+</p>
+<ul>
+  <li>Nomes de projetos, peças e clientes</li>
+  <li>Custos de material, energia, depreciação de impressoras</li>
+  <li>Registros de vendas, despesas, agenda de entregas</li>
+  <li>Preferências de configuração (idioma, tema, moeda, logo personalizado)</li>
+</ul>
+<p>
+  Todos esses dados ficam armazenados <strong>localmente no seu dispositivo</strong>,
+  dentro do armazenamento privado do aplicativo (Android DataStore). Nós,
+  desenvolvedores, não temos acesso a esses dados.
+</p>
+
+<h3>2.2 Dados obtidos via Google Sign-In (opcional)</h3>
+<p>
+  Caso você opte por entrar com sua conta Google (para ativar a sincronização
+  com o Google Drive), o aplicativo recebe da Google as seguintes informações:
+</p>
+<ul>
+  <li>Seu endereço de e-mail</li>
+  <li>Seu nome de exibição</li>
+  <li>Sua foto de perfil pública (URL)</li>
+</ul>
+<p>
+  Essas informações são usadas <strong>exclusivamente</strong> para exibir na
+  tela de Configurações e identificar a conta conectada para fins de backup.
+  Não armazenamos esses dados em servidores externos.
+</p>
+
+<h3>2.3 Dados sincronizados com seu Google Drive (opcional)</h3>
+<p>
+  Se você ativar a função "Salvar no Drive", o aplicativo grava um arquivo de
+  backup (<code>calc3d_backup.json</code>) na pasta privativa do aplicativo
+  dentro do <strong>seu próprio</strong> Google Drive (<code>appDataFolder</code>).
+  Essa pasta:
+</p>
+<ul>
+  <li>Pertence exclusivamente a você</li>
+  <li>Não fica visível na interface comum do Google Drive (é uma pasta oculta de aplicativo)</li>
+  <li>Pode ser apagada a qualquer momento</li>
+  <li>O desenvolvedor <strong>não tem acesso</strong> a ela — apenas você e o seu aplicativo</li>
+</ul>
+<p>
+  Usamos o escopo OAuth <code>drive.appdata</code>, que é o escopo mais
+  restritivo permitido pelo Google e <strong>não dá acesso a qualquer outro
+  arquivo do seu Drive</strong>.
+</p>
+
+<h3>2.4 Compras dentro do aplicativo (opcional)</h3>
+<p>
+  O Calc 3D oferece um plano <strong>Pro</strong> através do
+  <strong>Google Play Billing</strong>, com duas opções de aquisição:
+</p>
+<ul>
+  <li><strong>Pro Vitalício</strong> — pagamento único</li>
+  <li><strong>Pro Mensal</strong> — assinatura recorrente, cancelável a qualquer momento</li>
+</ul>
+<p>
+  Quando você realiza uma compra, o processo de pagamento é tratado
+  <strong>inteiramente pelo Google Play</strong>. O aplicativo
+  <strong>não tem acesso</strong> aos dados do seu cartão, conta bancária ou
+  qualquer informação financeira. Recebemos apenas um token de validação e o
+  tipo de plano adquirido, armazenados localmente no seu dispositivo para
+  liberar os recursos Pro. Para gerenciar ou cancelar assinaturas, use o
+  app Google Play → Pagamentos e assinaturas.
+</p>
+
+<h3>2.5 Compartilhamento via WhatsApp e outros apps externos</h3>
+<p>
+  Quando você toca em "Enviar Orçamento", "Adicionar ao Google Calendar" ou
+  "Abrir na carteira Bitcoin", o aplicativo apenas
+  <strong>abre o outro app com o conteúdo pré-preenchido</strong> — não
+  enviamos nada por conta própria. Você revisa o conteúdo e decide se vai
+  enviar/usar. Os dados que saem do Calc 3D nesse momento são governados pela
+  política de privacidade do app de destino (WhatsApp, Google Calendar,
+  carteira Bitcoin, etc.).
+</p>
+
+<h3>2.6 Dados que NÃO coletamos</h3>
+<ul>
+  <li>❌ Não coletamos dados de localização (GPS)</li>
+  <li>❌ Não coletamos dados de uso para analytics</li>
+  <li>❌ Não acessamos contatos, fotos, microfone ou câmera</li>
+  <li>❌ Não exibimos anúncios de terceiros</li>
+  <li>❌ Não usamos identificadores de publicidade (AAID)</li>
+  <li>❌ Não vendemos seus dados</li>
+</ul>
+
+<h2>3. Como usamos os dados</h2>
+<p>Os dados que você fornece são utilizados unicamente para:</p>
+<ul>
+  <li>Calcular custos e margens de lucro para suas peças impressas</li>
+  <li>Gerar relatórios de vendas e despesas</li>
+  <li>Permitir backup e restauração dos seus próprios dados</li>
+  <li>Liberar os recursos do plano Pro após sua compra</li>
+  <li>Personalizar a interface conforme suas preferências</li>
+</ul>
+
+<h2>4. Compartilhamento com terceiros</h2>
+<p>
+  Não compartilhamos seus dados com terceiros, exceto quando estritamente
+  necessário para as funcionalidades que <strong>você optou em usar</strong>:
+</p>
+<ul>
+  <li>
+    <strong>Google LLC</strong> — provedor de autenticação (Sign-In),
+    armazenamento (Drive) e processamento de pagamentos (Google Play Billing).
+    Consulte a
+    <a href="https://policies.google.com/privacy" target="_blank">Política de
+    Privacidade do Google</a>.
+  </li>
+</ul>
+
+<h2>5. Armazenamento e retenção</h2>
+<ul>
+  <li>
+    <strong>Dados locais</strong> permanecem no seu dispositivo enquanto o
+    aplicativo estiver instalado. Desinstalar o app remove todos os dados
+    locais.
+  </li>
+  <li>
+    <strong>Backups no Google Drive</strong> permanecem na sua conta até você
+    decidir apagá-los.
+  </li>
+  <li>
+    <strong>Backups em arquivo JSON</strong> exportados para a pasta de
+    Downloads permanecem até você apagá-los.
+  </li>
+  <li>
+    <strong>Histórico de compras</strong> é mantido pelo Google Play conforme a
+    política da plataforma; o app armazena apenas o token de validação local.
+  </li>
+</ul>
+
+<h2>6. Seus direitos (LGPD / GDPR)</h2>
+<p>Você tem o direito de, a qualquer momento:</p>
+<ul>
+  <li>
+    <strong>Acessar</strong> seus dados — todos eles estão visíveis dentro do
+    próprio aplicativo
+  </li>
+  <li>
+    <strong>Exportar</strong> seus dados — através do botão "Exportar Backup"
+    em Configurações
+  </li>
+  <li>
+    <strong>Corrigir ou excluir</strong> seus dados — diretamente no aplicativo,
+    ou via "Resetar Tudo"
+  </li>
+  <li>
+    <strong>Desconectar</strong> sua conta Google a qualquer momento, em
+    Configurações → Sincronização Google Drive
+  </li>
+  <li>
+    <strong>Revogar</strong> o acesso do aplicativo à sua conta Google em
+    <a href="https://myaccount.google.com/permissions" target="_blank">
+    myaccount.google.com/permissions</a>
+  </li>
+  <li>
+    <strong>Gerenciar ou cancelar assinaturas</strong> através do app Google Play
+  </li>
+</ul>
+
+<h2>7. Segurança</h2>
+<p>
+  Dados locais são armazenados na área privativa do aplicativo, à qual
+  <strong>apenas o Calc 3D</strong> tem acesso no Android. Comunicações com o
+  Google Drive utilizam <strong>OAuth 2.0 e HTTPS</strong>. Não armazenamos
+  senhas; a autenticação é gerenciada inteiramente pelo Google. Pagamentos são
+  processados pelo Google Play e nenhum dado financeiro passa pelo aplicativo.
+</p>
+
+<h2>8. Crianças</h2>
+<p>
+  O Calc 3D é destinado a empreendedores e profissionais maiores de 18 anos.
+  O app não é direcionado a crianças menores de 13 anos e não coletamos
+  intencionalmente dados de menores.
+</p>
+
+<h2>9. Permissões do Android utilizadas</h2>
+<ul>
+  <li><code>INTERNET</code> — necessária para Google Sign-In e Google Drive</li>
+  <li>
+    <code>ACCESS_NETWORK_STATE</code> — para detectar quando você está offline
+    e desativar funcionalidades de nuvem
+  </li>
+  <li>
+    <code>WRITE_EXTERNAL_STORAGE</code> (apenas em Android 9 ou inferior) —
+    para salvar backups na pasta Downloads
+  </li>
+  <li>
+    <code>com.android.vending.BILLING</code> — necessária para o sistema de
+    compras do Google Play (Pro Vitalício e Mensal)
+  </li>
+</ul>
+
+<h2>10. Alterações nesta política</h2>
+<p>
+  Esta política pode ser atualizada conforme o aplicativo evolui. A data de
+  "Última atualização" no topo desta página será modificada quando houver
+  mudanças significativas.
+</p>
+
+<h2>11. Contato</h2>
+<p>
+  Para exercer qualquer um dos direitos acima, esclarecer dúvidas sobre
+  privacidade, ou reportar uma preocupação:
+</p>
+<ul>
+  <li>📧 <a href="mailto:axiomcalculator3d@gmail.com">axiomcalculator3d@gmail.com</a></li>
+  <li>📷 <a href="https://instagram.com/axiom_3d_studio">@axiom_3d_studio</a></li>
+</ul>
+
+<footer>
+  © 2026 Axiom 3D Studio · Calc 3D
+</footer>
+
+</body>
+</html>
